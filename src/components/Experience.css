@@ -1,0 +1,57 @@
+.timeline {
+  position: relative;
+  border-left: 1px solid var(--ink-line);
+  margin-left: 0.4rem;
+}
+
+.timeline-item {
+  position: relative;
+  padding: 0 0 2.5rem 2.5rem;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -5px;
+  top: 0.35rem;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--ink);
+  border: 2px solid var(--amber);
+}
+
+.timeline-item:last-child {
+  padding-bottom: 0;
+}
+
+.timeline-period {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--paper-faint);
+  margin-bottom: 0.5rem;
+}
+
+.timeline-role {
+  font-size: 1.15rem;
+  color: var(--paper);
+  font-weight: 600;
+}
+
+.timeline-company {
+  color: var(--slate);
+  font-weight: 500;
+}
+
+.timeline-location {
+  font-size: 0.85rem;
+  color: var(--paper-faint);
+  margin-top: 0.3rem;
+}
+
+.timeline-summary {
+  margin-top: 0.7rem;
+  color: var(--paper-dim);
+  font-size: 0.96rem;
+  max-width: 62ch;
+}

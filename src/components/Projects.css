@@ -1,0 +1,140 @@
+.project-category-group {
+  margin-bottom: clamp(2.5rem, 5vw, 3.5rem);
+}
+
+.project-category-group:last-child {
+  margin-bottom: 0;
+}
+
+.project-category-heading {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--slate);
+  margin-bottom: 1.25rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--ink-line-soft);
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.project-card {
+  background: var(--ink-raised);
+  border: 1px solid var(--ink-line);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.project-card:hover {
+  border-color: var(--paper-faint);
+  transform: translateY(-2px);
+}
+
+.project-card-flagship {
+  background: linear-gradient(155deg, var(--ink-raised-2) 0%, var(--ink-raised) 60%);
+  border-color: var(--amber-soft);
+}
+
+.project-card-flagship .project-name::after {
+  content: '★ extends earlier work';
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  color: var(--amber);
+  margin-top: 0.4rem;
+  letter-spacing: 0.02em;
+}
+
+.project-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.tag-planned {
+  flex-shrink: 0;
+  border-style: dashed;
+  color: var(--paper-faint);
+}
+
+.project-index {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--paper-faint);
+  display: block;
+  margin-bottom: 0.6rem;
+}
+
+.project-name {
+  font-size: 1.35rem;
+  color: var(--paper);
+}
+
+.project-meta {
+  margin-top: 0.4rem;
+  font-size: 0.9rem;
+  color: var(--paper-dim);
+}
+
+.project-meta .dot {
+  color: var(--paper-faint);
+}
+
+.project-category {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.03em;
+  color: var(--slate);
+  text-transform: uppercase;
+}
+
+.project-body {
+  display: grid;
+  gap: 1.1rem;
+}
+
+.project-block-label {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.03em;
+  color: var(--paper-faint);
+  text-transform: uppercase;
+  margin-bottom: 0.4rem;
+}
+
+.project-block p {
+  color: var(--paper-dim);
+  font-size: 0.94rem;
+  line-height: 1.6;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding-top: 1.2rem;
+  border-top: 1px solid var(--ink-line-soft);
+}
+
+@media (max-width: 1000px) {
+  .project-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+}

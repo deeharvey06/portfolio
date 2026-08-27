@@ -1,0 +1,43 @@
+.node-graph {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.55;
+}
+
+.ng-edge {
+  stroke: var(--slate);
+  stroke-width: 0.12;
+  opacity: 0.22;
+  animation: ng-pulse-edge 7s ease-in-out infinite;
+}
+
+.ng-node {
+  fill: var(--slate);
+  opacity: 0.5;
+  animation: ng-drift 8s ease-in-out infinite;
+  transform-origin: center;
+}
+
+.ng-node-accent {
+  fill: var(--amber);
+  opacity: 0.75;
+}
+
+@keyframes ng-pulse-edge {
+  0%, 100% { opacity: 0.14; }
+  50% { opacity: 0.34; }
+}
+
+@keyframes ng-drift {
+  0%, 100% { transform: translateY(0); opacity: 0.45; }
+  50% { transform: translateY(-1.2px); opacity: 0.85; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ng-edge,
+  .ng-node {
+    animation: none;
+  }
+}

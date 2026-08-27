@@ -1,0 +1,51 @@
+.about-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: clamp(2.5rem, 6vw, 5rem);
+  align-items: start;
+}
+
+.about-copy .section-title {
+  max-width: 22ch;
+}
+
+.about-p {
+  color: var(--paper-dim);
+  font-size: 1.02rem;
+  margin-top: 1.25rem;
+  max-width: 62ch;
+}
+
+.about-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.stat-card {
+  background: var(--ink-raised);
+  border: 1px solid var(--ink-line);
+  border-radius: var(--radius-md);
+  padding: 1.5rem 1.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.stat-value {
+  font-family: var(--font-display);
+  font-size: 2.1rem;
+  font-weight: 600;
+  color: var(--amber);
+}
+
+.stat-label {
+  color: var(--paper-dim);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 860px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+}

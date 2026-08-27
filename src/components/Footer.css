@@ -1,0 +1,20 @@
+.footer {
+  border-top: 1px solid var(--ink-line);
+  padding: 1.75rem 0;
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--paper-faint);
+}
+
+@media (max-width: 560px) {
+  .footer-inner {
+    flex-direction: column;
+    gap: 0.4rem;
+    text-align: center;
+  }
+}
