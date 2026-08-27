@@ -1,23 +1,23 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react';
 
 const LINKS = [
   { href: '#work', label: 'Work' },
   { href: '#experience', label: 'Experience' },
   { href: '#skills', label: 'Skills' },
   { href: '#contact', label: 'Contact' },
-]
+];
 
 export default function Nav() {
-  const [scrolled, setScrolled] = useState(false)
-  const [open, setOpen] = useState(false)
-  const resumeUrl = `${import.meta.env.BASE_URL}Clifford_Harvey_Resume.pdf`
+  const [scrolled, setScrolled] = useState(false);
+  const [open, setOpen] = useState(false);
+  const resumeUrl = `${import.meta.env.BASE_URL}Clifford_Harvey_Resume.pdf`;
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 12)
-    onScroll()
-    window.addEventListener('scroll', onScroll, { passive: true })
-    return () => window.removeEventListener('scroll', onScroll)
-  }, [])
+    const onScroll = () => setScrolled(window.scrollY > 12);
+    onScroll();
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);
 
   return (
     <header className={`nav ${scrolled ? 'nav-scrolled' : ''}`}>
@@ -74,5 +74,5 @@ export default function Nav() {
         </div>
       )}
     </header>
-  )
+  );
 }
