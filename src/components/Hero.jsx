@@ -1,4 +1,4 @@
-import NodeGraph from './NodeGraph.jsx'
+import NodeGraph from './NodeGraph.jsx';
 
 export default function Hero() {
   return (
@@ -6,17 +6,17 @@ export default function Hero() {
       <NodeGraph />
       <div className="hero-scrim" />
       <div className="container hero-inner">
-        <p className="eyebrow">Senior Software Engineer · Las Vegas, NV (Remote)</p>
+        <p className="eyebrow">Senior Software Engineer · Henderson, NV (Remote)</p>
         <h1 className="hero-title">
           I build the systems <span className="text-amber">and</span> the interfaces
           <br />
           that sit on top of them.
         </h1>
         <p className="hero-sub">
-          10+ years shipping production web applications end to end — React and TypeScript on
-          the front, Node.js and cloud infrastructure underneath. I've led design systems used
-          by multiple teams, rebuilt legacy platforms into scalable microservices, and built
-          real-time developer tooling from scratch.
+          10+ years shipping production web applications end to end — React and TypeScript on the
+          front, Node.js and cloud infrastructure underneath. I've led design systems used by
+          multiple teams, rebuilt legacy platforms into scalable microservices, and built real-time
+          developer tooling from scratch.
         </p>
         <div className="hero-actions">
           <a href="#work" className="btn btn-primary">
@@ -36,5 +36,5 @@ export default function Hero() {
         </div>
       </div>
     </section>
-  )
+  );
 }

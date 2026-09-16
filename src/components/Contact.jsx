@@ -3,9 +3,7 @@ export default function Contact() {
     <section id="contact" className="section contact">
       <div className="container contact-inner">
         <p className="eyebrow">Contact</p>
-        <h2 className="contact-title">
-          Let's build something that has to work in production.
-        </h2>
+        <h2 className="contact-title">Let's build something that has to work in production.</h2>
         <p className="contact-sub">
           Open to senior and staff-level frontend, full-stack, and platform roles.
         </p>
@@ -22,13 +20,10 @@ export default function Contact() {
           >
             LinkedIn
           </a>
-          <a href="tel:+13103463713" className="btn btn-ghost">
-            (310) 346-3713
-          </a>
         </div>
 
-        <p className="contact-location">Las Vegas, NV — open to remote</p>
+        <p className="contact-location">Henderson, NV</p>
       </div>
     </section>
-  )
+  );
 }
